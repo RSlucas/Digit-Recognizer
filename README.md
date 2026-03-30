@@ -7,10 +7,10 @@ This repository contains two folders of **Convolutional Neural Networks (CNNs)**
 ```
 Digit-Recognizer/
 │
-├── digit_recogn/
+├── ai_vs_real/
 │   └── source.py
 │
-├── ai_vs_real/
+├── digit_recogn/
 │   └── source.py
 ```
 
