@@ -1,55 +1,90 @@
-    🔹 1. Pixel CNN (Digit Recognizer)
+# Digit Recognizer & Image Classification (CNN)
 
-- Model CNN aplicat pe date de tip pixeli (vectori numerici)
-- Nu folosește imagini .jpg, ci input-uri deja transformate în valori numerice
-- Similar cu problema clasică de recunoaștere a cifrelor (ex: MNIST)
+This repository contains two folders of **Convolutional Neural Networks (CNNs)** applied to different classification tasks.
 
-Caracteristici:
+## 📁 Project Structure
 
-Input: vectori de pixeli
-Model: CNN simplu
-Task: clasificare cifre
+```
+Digit-Recognizer/
+│
+├── digit_recogn/
+│   └── source.py
+│
+├── ai_vs_real/
+│   └── source.py
+```
 
+---
 
+## 🔹 1. Pixel CNN (Digit Recognizer)
 
+* CNN model applied to **pixel-based data (numerical vectors)**
+* Does not use `.jpg` images, but preprocessed pixel values
+* Similar to classic digit recognition problems (e.g. MNIST)
 
+**Features:**
 
+* Input: pixel vectors
+* Model: simple CNN
+* Task: digit classification
 
+---
 
-    🔹 2. Image CNN (Real vs AI Art)
-  
-- Model CNN aplicat pe imagini reale (.jpg)
-- Clasifică imaginile în:
-    0 → artă reală
-    1 → artă generată de AI
+## 🔹 2. Image CNN (Real vs AI Art)
 
-Caracteristici:
+* CNN model applied to **real images (.jpg)**
+* Classifies images into:
 
-Input: imagini RGB
-Preprocesare: resize, augmentări
-Model: CNN cu mai multe straturi convoluționale
-Metrică: F1-score
+  * `0` → real art
+  * `1` → AI-generated art
 
-⚙️ Tehnologii folosite
-Python
-PyTorch
-Pandas
-NumPy
-PIL
+**Features:**
 
+* Input: RGB images
+* Preprocessing: resizing, augmentations
+* Model: multi-layer CNN
+* Metric: F1-score
 
+---
 
-  🚀 Cum rulezi
-  Instalează dependințele:
-     - pip install torch torchvision pandas pillow scikit-learn
-  Rulează scriptul dorit:
-     - python source.py
-     
-  🧠 Scop
-    Scopul acestui repository este de a explora:
-      - diferențele dintre input-uri numerice vs imagini
-      - utilizarea CNN-urilor în contexte diferite
+## ⚙️ Technologies Used
 
-  OBSERVATII:
+* Python
+* PyTorch
+* Pandas
+* NumPy
+* PIL
 
-      --- Codul este scris pentru învățare și experimente, nu este optimizat complet pentru producție ---
+---
+
+## 🚀 How to Run
+
+1. Install dependencies:
+
+```
+pip install torch torchvision pandas pillow scikit-learn
+```
+
+2. Run the desired script:
+
+```
+python source.py
+```
+
+---
+
+## 🧠 Purpose
+
+This repository explores:
+
+* the difference between numerical and image-based inputs
+* how CNNs behave in different contexts
+* a full pipeline: dataset → model → evaluation
+
+---
+
+## 📌 Note
+
+This code is intended for learning and experimentation purposes and is not fully optimized for production use.
+
+---
